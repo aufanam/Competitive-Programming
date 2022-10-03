@@ -1,0 +1,2 @@
+#include <cstdio>
+main() {long long n,a,b;scanf("%lld",&n);if(n==1){a=0;b=1;}else if(n%2==0){a=n/2;b=n-a;}else if(n%3==0){a=n/3;b=n-a;}else if(n%5==0){a=n/5;b=n-a;}else if(n%7==0){a=n/7;b=n-a;}else{a=1;b=n-a;}printf("%lld %lld",a,b);}

@@ -1,0 +1,1 @@
+{"name":"Local: agA","url":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\agA.cpp","tests":[{"id":1657167382728,"input":"7 11 5 4\n2 4 2\n1 4 3\n7 2 2\n3 4 3\n5 7 5\n7 3 3\n6 1 1\n6 3 4\n2 4 3\n5 6 3\n7 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\agA.cpp","group":"local","local":true}

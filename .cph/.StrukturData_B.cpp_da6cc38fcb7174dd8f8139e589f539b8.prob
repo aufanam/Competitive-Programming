@@ -1,0 +1,1 @@
+{"name":"Local: StrukturData_B","url":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\StrukturData_B.cpp","tests":[{"id":1656206319229,"input":"6\n1 5\n1 7\n1 3\n2\n3\n2","output":"7\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\StrukturData_B.cpp","group":"local","local":true}

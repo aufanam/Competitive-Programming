@@ -1,0 +1,104 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+bool isPerfectSquare(ll x)
+{
+    if (x >= 0)
+    {
+        ll sr = sqrt(x);
+        return (sr * sr == x);
+    }
+    return false;
+}
+bool isPrime(ll n)
+{
+    if (n <= 1) return false;
+    for (int i = 2; i < n; i++)
+    {
+        if (n%i == 0) return false;
+    }
+    return true;
+}
+ll difdigit(ll a)
+{
+    ll b = floor(log10(a)+1);
+    int arr[10];
+    memset(arr, 0, sizeof(arr));
+    while (a > 0)
+    {
+        arr[a % 10]++;
+        a /= 10;
+    }
+    if (count(arr, arr+10, 1) == b) return 1;
+    return 0;
+}
+ll modnonol(ll a, ll b)
+{
+    if (a%b) return a%b;
+    else return b;
+}
+string balik(string s)
+{
+    reverse(s.begin(), s.end());
+    return s;
+}
+ll digitsum(ll a)
+{
+    ll b = 0;
+    while (a > 0)
+    {
+        b += a % 10;
+        a /= 10;
+    }
+    return b;
+}
+ll factorial(ll a)
+{
+    ll b = 1;
+    while (a > 0)
+    {
+        b *= a;
+        a--;
+    }
+    return b;
+}
+ll ceildiv(ll a, ll b)
+{
+    ll q;
+    q = a/b + (a % b != 0);
+    return q;
+}
+char letter(int n)
+{
+    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    return alphabet[n];
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    // code
+    ll n, a, c5 = 0, c0 = 0;
+    string s = "";
+    cin >> n;
+    while (n--)
+    {
+        cin >> a;
+        if (a == 5) c5++;
+        else c0++;
+    }
+    for (int i = 0; i < (c5/9)*9; i++)
+    {
+        s += "5";
+    }
+    for (int i = 0; i < c0; i++)
+    {
+        s += "0";
+    }
+    if (c5 >= 9 && c0 > 0) cout << s << '\n';
+    else if (c0 > 0) cout << 0 << '\n';
+    else cout << "-1\n";
+    // code
+    return 0;
+}

@@ -1,0 +1,1 @@
+{"name":"Local: osn20161A","url":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\osn20161A.cpp","tests":[{"id":1658237122652,"input":"0.....6789\n2 3\n1 2 3\n4 5 6\n3\n0 100\n12 12\n100 200","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Documents\\Coding\\Problemset\\osn20161A.cpp","group":"local","local":true}
